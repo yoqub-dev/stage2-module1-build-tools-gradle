@@ -1,9 +1,13 @@
 dependencies {
     implementation project(path: ':utils')
-}//add everything here
+}
 
 test {
     useJUnitPlatform()
+}
+
+repositories {
+    mavenCentral()
 }
 
 compileJava {}.dependsOn(':utils:publishToMavenLocal')
